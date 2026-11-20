@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: messaging-trust-layer
+  datasource:
+    # The real production profile: a real PostgreSQL instance. Not exercised by any number in
+    # this repository's README; every measured number runs against H2.
+    url: jdbc:postgresql://localhost:5432/messaging_trust
+    username: messaging_trust
+    password: messaging_trust
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  screening:
+    calibration-messages: 4000
+    calibration-seed: 11
+    top-fraction: 0.031

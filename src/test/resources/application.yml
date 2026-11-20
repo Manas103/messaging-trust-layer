@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: messaging-trust-layer-test
+  datasource:
+    url: jdbc:h2:mem:messaging_trust_test;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  screening:
+    calibration-messages: 2000
+    calibration-seed: 11
+    top-fraction: 0.031

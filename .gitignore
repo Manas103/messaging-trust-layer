@@ -1,0 +1,8 @@
+target/
+*.class
+*.log
+.idea/
+*.iml
+frontend/node_modules/
+frontend/dist/
+# docs/*.txt are committed raw output; see README for the regenerating commands.
